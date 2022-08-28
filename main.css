@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Colfax";
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/ColfaxWebRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "Colfax";
+  font-style: normal;
+  font-weight: 500;
+  src: url("font/ColfaxWebMedium.woff");
+}
+@font-face {
+  font-family: "Colfax";
+  font-style: normal;
+  font-weight: 700;
+  src: url("font/ColfaxWebBold.woff");
+}
+
+html {
+  height: 100%;
+  background-image: url("assets/bg.jpg");
+  background-color: #fcfcfc;
+  font-family: Colfax;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+p {
+  font-size: 16px;
+  color: #66676b;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+input {
+  background-color: #f7f7f7;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  padding: 16px 16px 16px 16px;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+input:focus{
+    outline: 0px solid #ebebeb;
+    border: 1px solid #dedddd;
+}
+::placeholder {
+  color: #a1a1a1;
+  font-size: 16px;
+}
+
+.input-group {
+    position: relative;
+}
+
+button {
+  background-color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  -webkit-text-stroke: 0.6px;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.03);
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+  color: #343437;
+}
+
+.subscription-box {
+  width: 320px;
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.02);
+  animation: 0.5s ease-out 0s 1 slideIn;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(8%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
