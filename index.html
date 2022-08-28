@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nouns Agora</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script data-cfasync="false" type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
     <!-- <iframe src="https://cdn.forms-content.sg-form.com/668de4b0-c8ae-11eb-a5f9-fe0ef6da0f00"/> -->
     <div class="subscription-box">
+      <div class="title-group">
         <h1>Nouns Agora</h1>
-        <!-- <a href=""><img src="assets/twitter.svg"></a> -->
-        <p>Agora is the home of nouns voters. Pitch yourself as a delegate, see what voters want to fund, delegate your votes to active community members, and more</p>
-        <div class="input-group">
-            <input type="text" placeholder="your@email.com">
-            <button>Subscribe</button>
-        </div>
+        <a href="https://twitter.com/nounsagora" target="_blank"
+          ><img src="assets/twitter.svg"
+        /></a>
+      </div>
+      <p>
+        Agora is the home of nouns voters. Pitch yourself as a delegate, see
+        what voters want to fund, delegate your votes to active community
+        members, and more. Drop your email to get notified of the launch.
+      </p>
+      <div class="input-group">
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+action="https://script.google.com/macros/s/AKfycbz-ONOa3F9y4l6p-_mI7YqJskXolGIOnM4Q3qytpqfuH48uq35XaeQYW2obBWrmPCtE/exec">
+
+          <fieldset class="pure-group">
+            <input id="email" name="email" type="email" value=""
+            required placeholder="your.name@email.com"/>
+          </fieldset>
+
+          <button class="button-success pure-button button-xlarge">
+              Subscribe
+          </button>
+          <div class="thankyou_message" style="display:none;">
+            <h2 class="message">Got it. We'll notify you when Agora is ready!</h2>
+          </div>
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
+
+
